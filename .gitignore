@@ -4,3 +4,6 @@ dist/
 .venv
 .idea
 .vscode
+*.egg-info/
+*.py[cod]
+*$py.class
