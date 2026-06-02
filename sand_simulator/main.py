@@ -1,5 +1,5 @@
 import pygame
-import src.world as world
+from sand_simulator import world
 
 GRID_WIDTH = 4
 WINDOW_WIDTH = 600
@@ -16,7 +16,7 @@ def updateWindow(grid, screen):
             if grid[i][j] != (0,0,0):
                 pygame.draw.rect(screen, grid[i][j], pygame.Rect(GRID_WIDTH * i, GRID_WIDTH * j, GRID_WIDTH, GRID_WIDTH))
 
-if __name__ == "__main__":
+def main():
     pygame.init()
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     gameClock = pygame.time.Clock()
@@ -51,4 +51,6 @@ if __name__ == "__main__":
 
     pygame.quit()
 
-    
+
+if __name__ == "__main__":
+    main()

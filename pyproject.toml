@@ -11,8 +11,9 @@ dependencies = [
     "pygame>=2.0.0",
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
-
 [project.scripts]
-run = "src.main:main"
+sand = "sand_simulator.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = false
