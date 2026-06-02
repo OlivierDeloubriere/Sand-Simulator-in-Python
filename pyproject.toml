@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sand-simulator"
+version = "0.1.0"
+description = "Simulating falling sand with pygame"
+readme = "README.md"
+authors = [{name = "Olivier Deloubriere"}]
+dependencies = [
+    "pygame>=2.0.0",
+]

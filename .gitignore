@@ -1,4 +1,6 @@
 build/
 __pycache__
 dist/
-main.spec
+.venv
+.idea
+.vscode
