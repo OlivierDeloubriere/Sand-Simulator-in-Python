@@ -1,5 +1,5 @@
 import pygame
-import world
+import src.world as world
 
 GRID_WIDTH = 4
 WINDOW_WIDTH = 600

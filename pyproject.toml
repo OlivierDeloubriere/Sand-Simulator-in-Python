@@ -6,8 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "sand-simulator"
 version = "0.1.0"
 description = "Simulating falling sand with pygame"
-readme = "README.md"
 authors = [{name = "Olivier Deloubriere"}]
 dependencies = [
     "pygame>=2.0.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
